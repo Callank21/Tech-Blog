@@ -77,7 +77,6 @@ form a {
 .wrapper {
   width: 100%;
   min-height: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -88,12 +87,16 @@ header {
   align-items: center;
   padding: 0 1%;
   background-color:var(--secondary-color);
+  padding-left: 5em;
 }
 
 header h1 {
-  font-size: 1em;
   background-color:var(--main-bg-color);
-  width:15%;
+  width:5em;
+  margin-left: 2em;
+  border: 2px solid var(--main-bg-color);
+  border-radius: 5px;
+  box-shadow: 10px 5px rgb(196, 243, 206);
 }
 
 main {
@@ -129,10 +132,20 @@ main {
 .post {
   margin-bottom: 2%;
   line-height: 150%;
+  border: 2.5px solid var(--secondary-color);
 }
 
-.title {
-  border: 2.5px solid var(--secondary-color);
+.post .title {
+  margin-top: 0%;
+  color:var(--main-bg-color);
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.post .title p {
+  margin: 0;
+  padding: 0;
 }
 
 .title h3 {
@@ -153,11 +166,21 @@ main {
 .comment {
   padding: 0%;
   margin-bottom: 0%;
-  border: 2.5px solid var(--secondary-color);
+  border: 2.5px solid var(--main-bg-color);
 }
 
-.comment .post {
+ .comment .post {
   display: flex;
+}
+
+.comment .text {
+  margin-left: 1em;
+}
+
+.comment .post .title {
+  color: var(--secondary-color);
+  background-color: var(--main-bg-color);
+  border-left: var(--secondary-color);
 }
 
 
