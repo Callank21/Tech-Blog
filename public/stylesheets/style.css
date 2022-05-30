@@ -70,6 +70,10 @@ form label {
   display: block;
 }
 
+form a {
+  color:rgb(44, 35, 3);
+}
+
 .wrapper {
   width: 100%;
   min-height: 100%;
