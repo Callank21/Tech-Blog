@@ -157,6 +157,7 @@ main {
 .edit-text {
   display: block;
   margin: -1.5% 0 2% 0;
+  color: var(--secondary-color);
 }
 
 .comment-form {
@@ -190,11 +191,23 @@ main {
   opacity: .6;
 }
 
+.new-post {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
+}
+
 .new-post-form input {
   width: 300px;
 }
 
+#post-text {
+  width: 300px;
+  height: 500px;
+}
+
 .edit-post-form {
+  display: block;
   margin-bottom: 5%;
 }
 
